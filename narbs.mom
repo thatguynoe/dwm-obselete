@@ -18,7 +18,7 @@ Pressing \f(CWs\fP will fit it to window width (\f(CWa\fP to revert).
 (These are general binds set for \fBzathura\fP, the pdf reader.)
 .LI
 .ITEM
-\f(CWSuper+F12\fP will show this document at any time.
+\f(CWSuper+F1\fP will show this document at any time.
 .ITEM
 By \f(CWSuper\fP, I mean the the Windows Key.
 .LIST OFF
