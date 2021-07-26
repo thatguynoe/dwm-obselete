@@ -2,7 +2,7 @@
 
 My build of dwm is heavily inspired by [Luke Smith's build](https://github.com/LukeSmithxyz/dwm), which I strongly encourage you to check out for more info.
 
-## Patches and features:
+## Patches and features
 
 * [**actualfullscreen-20191112-cb3f58a**](https://dwm.suckless.org/patches/actualfullscreen/dwm-actualfullscreen-20191112-cb3f58a.diff) provides true fullscreen (`super+f`) in dwm.
 * [**alpha/fixborders-6.2**](https://dwm.suckless.org/patches/alpha/dwm-fixborders-6.2.diff) keeps opaque borders when using terminal transparency.
