@@ -179,7 +179,7 @@ static Key keys[] = {
     { MODKEY,                       XK_F3,                      spawn,          SHCMD("displayselect") },
     { MODKEY,                       XK_F4,                      spawn,          SHCMD(TERMINAL " -e pulsemixer; kill -44 $(pidof dwmblocks)") },
     { MODKEY,                       XK_F5,                      spawn,          SHCMD("$BROWSER localhost:631/") },
-    { MODKEY,                       XK_F6,                      spawn,          SHCMD("bluetoothcon; kill -44 $(pidof dwmblocks)") },
+    { MODKEY,                       XK_F6,                      spawn,          SHCMD("bluetoothcon; sleep 3; kill -44 $(pidof dwmblocks)") },
     { MODKEY,                       XK_F7,                      spawn,          SHCMD("bluetoothdis; kill -44 $(pidof dwmblocks)") },
     { MODKEY,                       XK_F8,                      spawn,          SHCMD("mw -Y; pkill -RTMIN+12 dwmblocks") },
     { MODKEY,                       XK_F9,                      spawn,          SHCMD("dmenumount") },
