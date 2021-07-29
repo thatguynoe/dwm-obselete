@@ -46,13 +46,14 @@ static const Rule rules[] = {
      *  WM_CLASS(STRING) = instance, class
      *  WM_NAME(STRING) = title
      */
-    /* class     instance  title           tags mask         isfloating  isterminal  noswallow  monitor */
-    { "Gimp",    NULL,     NULL,           0,                1,          0,           0,        -1 },
-    { "Firefox", NULL,     NULL,           1 << 8,           0,          0,          -1,        -1 },
-    { TERMINAL,  NULL,     NULL,           0,                0,          1,           0,        -1 },
-    { NULL,      NULL,     "Event Tester", 0,                0,          0,           1,        -1 }, /* xev */
-    { NULL,      "spterm", NULL,           SPTAG(0),         1,          1,           0,        -1 },
-    { NULL,      "spcalc", NULL,           SPTAG(1),         1,          1,           0,        -1 },
+    /* class     instance  title                    tags mask   isfloating  isterminal  noswallow  monitor */
+    { "Gimp",    NULL,     NULL,                    0,          1,          0,           0,        -1 },
+    { "Firefox", NULL,     NULL,                    1 << 8,     0,          0,          -1,        -1 },
+    { NULL,      NULL,     "Picture-in-Picture",    0,          1,          0,           0,        -1 },
+    { TERMINAL,  NULL,     NULL,                    0,          0,          1,           0,        -1 },
+    { NULL,      NULL,     "Event Tester",          0,          0,          0,           1,        -1 }, /* xev */
+    { NULL,      "spterm", NULL,                    SPTAG(0),   1,          1,           0,        -1 },
+    { NULL,      "spcalc", NULL,                    SPTAG(1),   1,          1,           0,        -1 },
 };
 
 /* layout(s) */
