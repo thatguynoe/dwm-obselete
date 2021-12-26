@@ -98,6 +98,7 @@ static Key keys[] = {
     STACKKEYS(MODKEY,                                           focus)
     STACKKEYS(MODKEY|ShiftMask,                                 push)
     { MODKEY,                       XK_grave,                   spawn,          SHCMD("dmenuunicode") },
+    { MODKEY|ControlMask,           XK_grave,                   spawn,          SHCMD("dunstctl history-pop") },
     TAGKEYS(                        XK_1,                                       0)
     TAGKEYS(                        XK_2,                                       1)
     TAGKEYS(                        XK_3,                                       2)
@@ -167,6 +168,7 @@ static Key keys[] = {
 
     { MODKEY,                       XK_space,                   zoom,           {0} },
     { MODKEY|ShiftMask,             XK_space,                   togglefloating, {0} },
+    { MODKEY|ControlMask,           XK_space,                   spawn,          SHCMD("dunstctl close") },
 
     { 0,                            XK_Print,                   spawn,          SHCMD("maim -u $HOME/Pictures/Screenshots/pic-full-$(date '+%y%m%d-%H%M-%S').png") },
     { ShiftMask,                    XK_Print,                   spawn,          SHCMD("maimpick") },
