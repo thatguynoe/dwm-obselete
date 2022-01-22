@@ -930,6 +930,7 @@ focusmon(const Arg *arg)
 		return;
 	sel = selmon->sel;
 	selmon = m;
+	XWarpPointer(dpy, None, m->barwin, 0, 0, 0, 0, m->mw / 2, m->mh / 2);
 	unfocus(sel, 0);
 	focus(NULL);
 }
