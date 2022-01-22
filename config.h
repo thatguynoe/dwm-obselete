@@ -144,7 +144,9 @@ static Key keys[] = {
     { MODKEY,                       XK_f,                       togglefullscr,  {0} },
     { MODKEY|ShiftMask,             XK_f,                       setlayout,      {.v = &layouts[3]} },    /* floating */
     { MODKEY,                       XK_h,                       setmfact,       {.f = -0.05} },
+    { MODKEY|ShiftMask,             XK_h,                       focusmon,       {.i = -1} },
     { MODKEY,                       XK_l,                       setmfact,       {.f = +0.05} },
+    { MODKEY|ShiftMask,             XK_l,                       focusmon,       {.i = +1} },
     { MODKEY,                       XK_apostrophe,              togglescratch,  {.ui = 1} },
     { MODKEY,                       XK_backslash,               view,           {0} },
     { MODKEY,                       XK_Return,                  spawn,          {.v = termcmd } },
