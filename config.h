@@ -141,6 +141,7 @@ static Key keys[] = {
     { MODKEY|ShiftMask,             XK_a,                       defaultgaps,    {0} },
     { MODKEY,                       XK_d,                       spawn,          {.v = dmenucmd } },
     { MODKEY|ShiftMask,             XK_d,                       spawn,          SHCMD("passmenu") },
+    { MODKEY,                       XK_s,                       spawn,          SHCMD("pkill -USR1 redshift") },
     { MODKEY,                       XK_f,                       togglefullscr,  {0} },
     { MODKEY|ShiftMask,             XK_f,                       setlayout,      {.v = &layouts[3]} },    /* floating */
     { MODKEY,                       XK_h,                       setmfact,       {.f = -0.05} },
