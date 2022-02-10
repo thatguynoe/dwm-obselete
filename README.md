@@ -12,6 +12,7 @@ My build of dwm is heavily inspired by [Luke Smith's build](https://github.com/L
 * [**hide_vacant_tags-6.2**](https://dwm.suckless.org/patches/hide_vacant_tags/dwm-hide_vacant_tags-6.2.diff) hides tags which are not in use.
 * [**scratchpads-20200414-728d397b**](https://dwm.suckless.org/patches/scratchpads/dwm-scratchpads-20200414-728d397b.diff) is self-explanatory.
 * [**stacker-6.2**](https://dwm.suckless.org/patches/stacker/dwm-stacker-6.2.diff) can move windows up the stack with `super+K/J`.
+* [**sticky-6.1**](https://dwm.suckless.org/patches/sticky/dwm-sticky-6.1.diff) makes windows "sticky" with `super+s`.
 * [**swallow-20201211-61bb8b2**](https://dwm.suckless.org/patches/swallow/dwm-swallow-20201211-61bb8b2.diff) allows for programs launched via the terminal to take its place if they would make it inoperable.
 * [**vanitygaps-6.2**](https://dwm.suckless.org/patches/vanitygaps/dwm-vanitygaps-6.2.diff) provides gaps throughout all layouts.
 * Autostarts [dwmblocks](http://github.com/thatguynoe/dwmblocks) through the `runAutostart` function in `dwm.c`.
