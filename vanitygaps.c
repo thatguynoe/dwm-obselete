@@ -260,6 +260,7 @@ horizgrid(Monitor *m) {
 			sx += WIDTH(c) + iv;
 		}
 }
+
 /*
  * Default tile layout + gaps
  */
