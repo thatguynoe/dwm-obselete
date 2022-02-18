@@ -1,7 +1,5 @@
 /* See LICENSE file for copyright and license details. */
 
-#define TERMINAL "st"
-
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 10;       /* snap pixel */
@@ -26,6 +24,7 @@ static const char *colors[][3]      = {
     [SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
+#define TERMINAL "st"
 typedef struct {
     const char *name;
     const void *cmd;
