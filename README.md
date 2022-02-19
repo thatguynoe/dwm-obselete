@@ -8,6 +8,7 @@ My build of dwm is heavily inspired by [Luke Smith's build](https://github.com/L
 * [**alpha/fixborders-6.2**](https://dwm.suckless.org/patches/alpha/dwm-fixborders-6.2.diff) keeps opaque borders when using terminal transparency.
 * [**alwayscenter-20200625-f04cac6**](https://dwm.suckless.org/patches/alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff) makes all floating windows centered.
 * [**deck-6.2**](https://dwm.suckless.org/patches/deck/dwm-deck-6.2.diff) provides the deck layout and is accessible via `super+u`.
+* [**exitfullscreen-6.3**](https://github.com/LukeSmithxyz/dwm/pull/186/files) exits fullscreen if a new window is spawned.
 * [**focusmonmouse-6.2**](https://dwm.suckless.org/patches/focusmonmouse/dwm-focusmonmouse-6.2.diff) moves the mouse to the selected monitor.
 * [**hide_vacant_tags-6.2**](https://dwm.suckless.org/patches/hide_vacant_tags/dwm-hide_vacant_tags-6.2.diff) hides tags which are not in use.
 * [**scratchpads-20200414-728d397b**](https://dwm.suckless.org/patches/scratchpads/dwm-scratchpads-20200414-728d397b.diff) is self-explanatory.
