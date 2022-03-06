@@ -122,7 +122,7 @@ static Key keys[] = {
     { MODKEY,                       XK_w,                       spawn,          SHCMD("$BROWSER") },
     { MODKEY|ShiftMask,             XK_w,                       spawn,          SHCMD(TERMINAL " -e nmtui") },
     { MODKEY,                       XK_e,                       spawn,          SHCMD(TERMINAL " -e neomutt ; pkill -RTMIN+12 dwmblocks") },
-    { MODKEY,                       XK_r,                       spawn,          SHCMD(TERMINAL " -e lf") },
+    { MODKEY,                       XK_r,                       spawn,          SHCMD(TERMINAL " -e lfub") },
     { MODKEY|ShiftMask,             XK_r,                       spawn,          SHCMD(TERMINAL " -e htop") },
     { MODKEY,                       XK_t,                       setlayout,      {.v = &layouts[0]} },    /* tile */
     { MODKEY,                       XK_u,                       setlayout,      {.v = &layouts[1]} },    /* deck */
