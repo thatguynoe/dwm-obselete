@@ -189,7 +189,7 @@ There are nine tags, active tags are highlighted in the top left.
 .ITEM
 \f(CWSuper+F11\fP \(en View webcam
 .ITEM
-\f(CWSuper+F12\fP \(en Rerun kayboard mapping scripts if new keyboard is attached
+\f(CWSuper+F12\fP \(en Rerun keyboard mapping scripts if new keyboard is attached
 .ITEM
 \f(CWSuper+`\fP \(en Select an emoji to copy to clipboard
 .LIST OFF
