@@ -31,10 +31,12 @@ typedef struct {
 } Sp;
 const char *spcmd1[] = { TERMINAL, "-n", "spterm", "-g", "120x34", NULL };
 const char *spcmd2[] = { TERMINAL, "-n", "spcalc", "-f", "monospace:size=16", "-g", "50x20", "-e", "bc", "-lq", NULL };
+const char *spcmd3[] = { TERMINAL, "-n", "spzoom", "-g", "60x17", "-e", "xzoom", NULL };
 static Sp scratchpads[] = {
     /* name          cmd  */
     {"spterm",      spcmd1},
     {"spcalc",      spcmd2},
+    {"spzoom",      spcmd3},
 };
 
 /* tagging */
@@ -53,6 +55,7 @@ static const Rule rules[] = {
     { NULL,      NULL,     "Event Tester",          0,          0,          0,           1,        -1 }, /* xev */
     { NULL,      "spterm", NULL,                    SPTAG(0),   1,          1,           0,        -1 },
     { NULL,      "spcalc", NULL,                    SPTAG(1),   1,          1,           0,        -1 },
+    { NULL,      "spzoom", NULL,                    SPTAG(2),   1,          1,           0,        -1 },
 };
 
 /* layout(s) */
@@ -184,7 +187,7 @@ static Key keys[] = {
     { MODKEY,                       XK_Scroll_Lock,             spawn,          SHCMD("killall screenkey || screenkey &") },
 
     { MODKEY,                       XK_F1,                      spawn,          SHCMD("groff -mom /usr/local/share/dwm/narbs.mom -Tpdf | zathura -") },
-    { MODKEY,                       XK_F2,                      spawn,          SPAWN("xzoom") },
+    { MODKEY,                       XK_F2,                      togglescratch,  {.ui = 2} },
     { MODKEY,                       XK_F3,                      spawn,          SPAWN("displayselect") },
     { MODKEY,                       XK_F4,                      spawn,          SHCMD(TERMINAL " -e pulsemixer ; kill -44 $(pidof dwmblocks)") },
     { MODKEY,                       XK_F5,                      spawn,          SHCMD("$BROWSER localhost:631/") },
