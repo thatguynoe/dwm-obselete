@@ -16,7 +16,7 @@ My build of dwm is heavily inspired by [Luke Smith's build](https://github.com/L
 * [**statuspadding-6.3**](https://dwm.suckless.org/patches/statuspadding/dwm-statuspadding-6.3.diff) makes the amount of horizontal and vertical padding in the status bar configurable.
 * [**sticky-6.1**](https://dwm.suckless.org/patches/sticky/dwm-sticky-6.1.diff) makes windows "sticky" with <kbd>super+s</kbd>.
     * [**noautofocussticky-6.2**](https://github.com/LukeSmithxyz/dwm/pull/181/files) does not focus sticky windows when switching tags.
-    * The `focus(NULL)` code on line 1898 in `dwm.c` switches focus to the visible window upon unstickying a window; no more accidentally killing previously-stickied windows.
+    * The `focus(NULL)` code in the `togglesticky` function in `dwm.c` switches focus to the visible window upon unstickying a window; no more accidentally killing previously-stickied windows.
 * [**swallow-6.2**](https://dwm.suckless.org/patches/swallow/dwm-swallow-6.2.diff) allows for programs launched via the terminal to take its place if they would make it inoperable.
 * [**vanitygaps-6.2**](https://dwm.suckless.org/patches/vanitygaps/dwm-vanitygaps-6.2.diff) provides gaps throughout all layouts.
 * Autostarts [dwmblocks](http://github.com/thatguynoe/dwmblocks) through the `runAutostart` function in `dwm.c`.
