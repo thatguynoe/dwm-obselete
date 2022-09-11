@@ -29,7 +29,3 @@ git clone https://github.com/thatguynoe/dwm
 cd dwm
 sudo make install
 ```
-
-## Please install `libxft-bgra`<sup>`aur`</sup>!
-
-In order for dwm to display color emojis, the `libxft-bgra`<sup>`aur`</sup> package must be installed---else, dwm will crash.
