@@ -1,5 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
+#define TERMINAL "st"
+
 /* appearance */
 static const unsigned int borderpx  = 4;        /* border pixel of windows */
 static const unsigned int snap      = 10;       /* snap pixel */
@@ -28,7 +30,6 @@ static const char *colors[][3]      = {
 static const XPoint stickyicon[]    = { {0,0}, {4,0}, {4,8}, {2,6}, {0,8}, {0,0} }; /* represents the icon as an array of vertices */
 static const XPoint stickyiconbb    = {4,8};	/* defines the bottom right corner of the polygon's bounding box (speeds up scaling) */
 
-#define TERMINAL "st"
 typedef struct {
     const char *name;
     const void *cmd;
