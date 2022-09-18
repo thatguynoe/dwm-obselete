@@ -1,3 +1,5 @@
+This repo is archived as updating is a pain -- I have applied the advice [listed here](https://dwm.suckless.org/customisation/patches_in_git/) to make updating easier.
+
 # dwm
 
 My build of dwm is heavily inspired by [Luke Smith's build](https://github.com/LukeSmithxyz/dwm), which I strongly encourage you to check out for more info. Running on commit [`d39e2f3441fe18aba8d1a62c08918a411ec6f237`](https://git.suckless.org/dwm/commit/d39e2f3441fe18aba8d1a62c08918a411ec6f237.html).
